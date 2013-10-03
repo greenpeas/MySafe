@@ -54,5 +54,9 @@ class controller {
     public function safe() {
         require 'methods/'.__FUNCTION__.'.php';
     }
+    
+    public function doc() {
+        require 'methods/'.__FUNCTION__.'.php';
+    }
 
 }
