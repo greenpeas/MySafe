@@ -44,8 +44,8 @@
                         
                         
                         
-                        <li><a href="/site/page?view=about">О проекте</a></li>
-                        <li><a href="/site/contact">Обратная связь</a></li>
+                        <li><a href="/page?view=about">О проекте</a></li>
+                        <li><a href="/contact">Обратная связь</a></li>
                     </ul>
                     <ul class="pull-right nav" id="yw1">
                         <?php
@@ -84,7 +84,7 @@
 <div style="clear:both;"></div>
 <!-- content layout end-->
 
-		<div class="footer"><footer><hr><?php echo $this->gentime; ?> сек. / Скушано памяти: <?php echo round(memory_get_peak_usage()/(1024*1024),2)."MB"?></footer></div>
+		<div class="footer"><footer><hr>Powered by <a href="http://artyomovanton.ru" target="_blank">Artyomov Anton</a><br>© 2013-<?php echo date('Y');?> <br><?php echo $this->gentime; ?> сек. / Скушано памяти: <?php echo round(memory_get_peak_usage()/(1024*1024),2)."MB"?></footer></div>
     <script type="text/javascript">
         /*<![CDATA[*/
         $(function($) {

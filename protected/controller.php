@@ -58,5 +58,9 @@ class controller {
     public function doc() {
         require 'methods/'.__FUNCTION__.'.php';
     }
+    
+    public function page() {
+        require 'methods/'.__FUNCTION__.'.php';
+    }
 
 }
