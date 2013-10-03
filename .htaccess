@@ -1,0 +1,14 @@
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+AddDefaultCharset utf-8
+RewriteEngine On
+# http to https redirect
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# otherwise forward it to index.php
+RewriteRule . index.php
